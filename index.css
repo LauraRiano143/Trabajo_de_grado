@@ -82,6 +82,14 @@ header a:hover{
     padding: 0px 10px 20px;
 }
 
+#inicio button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 55px;
+}
+
 #inicio img{
     width: 259px;
     height: 168px;
@@ -132,9 +140,8 @@ header a:hover{
 
 #lista li{
     position: relative;
-    display: block;
-    padding: .4em .4em .4em 2em;
-    *padding: .4em;
+    display: flex;
+    padding: .4em 1em.4em 2em;
     margin: .5em 0;
     background: #ddd;
     color: #444;
@@ -197,4 +204,95 @@ footer .cp{
 
 footer .logo{
     padding: 10px 10px 0;
+}
+
+@media (min-width: 830px){
+
+    header .logo{
+        padding-left: 20px;
+    }
+
+    header{
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    header a{
+        padding-top: 10px ;
+    }
+
+    button{
+        margin-left:30px;
+    }
+
+    #inicio{
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+        flex-direction: column;
+        background-image: url("media/inicio.png");
+        background-repeat: no-repeat;
+        background-size: 26em;
+        background-position: right;
+        font-size: 20px;
+    }
+
+    #inicio img{
+        visibility: hidden;
+        display: none;
+    }
+    
+    #inicio .container{
+        margin: 5em 7em; 
+    }
+
+    #inicio button{
+        margin: 0;
+    }
+
+    #acercade{
+        background-image: none;
+        background-image: url("media/runner.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+
+    #acercade .texto {
+        text-align: justify;
+        padding-left: 30em;
+        padding-right: 5em;
+    }
+    
+    #lista li{
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em 2em;
+        margin: .5em 0;
+        background: #ddd;
+        color: #444;
+        text-decoration: none;
+        border-radius: .3em;
+        transition: all .3s ease-out;   
+    }
+
+}
+
+@media (min-width:900px){
+    #inicio{
+        background-position-x: calc(100vw-800px);
+    }
 }
