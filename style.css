@@ -275,11 +275,14 @@ footer .logo{
     top: -40px;
 }
 
-.inicio h4{
-    margin: 0;
-    margin-top: 1em;
+.reg h4{
+    margin:0;
+    margin-top: 1.6em;
 }
 
+.inicio h4{
+    margin-bottom: 1.3rem;
+}
 .agrupar{
     display: flex;
 }
@@ -330,6 +333,17 @@ footer .logo{
 }
 
 .enviar button:hover{
+    background-color: #C1121F;
+}
+
+.registro button{
+    background-color: #3C7498;
+    margin: 0;
+    margin-top: 1.3em;
+    border: 1px solid black;
+}
+
+.registro button:hover{
     background-color: #C1121F;
 }
 
@@ -431,19 +445,18 @@ footer .logo{
 
     .contenedor{
         margin-top: 5em;
-        margin-left: auto;
         width: 25rem;
         height: 27rem;
-        background-color:#80D9EB; 
-        color:#495057;
         border-radius: 25px;
         padding: 4rem;
-        position:relative;
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .contenedor1{
+        margin-top: 5em;
+        width: 25rem;
+        height: 27rem;
+        border-radius: 25px;
+        padding: 4rem;
     }
 
     .imagen{
@@ -503,7 +516,7 @@ footer .logo{
         font-size: 0.8em;
         font-weight:bold;
     }
-    
+
     .agrupar a{
         margin-left: 10px;
         color: white;
