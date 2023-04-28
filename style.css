@@ -297,7 +297,7 @@ footer .logo{
 .item{
     display: flex;
     align-items: center;
-    margin-top: 0.2em;
+    margin-top: 0.1em;
 }
 
 .item a{
@@ -326,6 +326,10 @@ footer .logo{
     width: 12rem;
 }
 
+.enviar{
+    margin-top: 1.5em;
+}
+
 .enviar button{
     background-color: #3C7498;
     margin: 0;
@@ -345,6 +349,65 @@ footer .logo{
 
 .registro button:hover{
     background-color: #C1121F;
+}
+
+/*Estilos envio de correo*/
+
+.sport img{
+    display: block;
+    margin: auto;
+    margin-top: 3em;
+    width: 15em;
+}
+
+.completo p{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 23px;
+    margin-top: 0.5em;
+}
+
+.grupo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:auto;
+}
+
+.grupo img{
+    border: 2px solid black;
+    border-radius: 8px;
+    border-bottom-right-radius:0;
+    border-top-right-radius:0;
+    border-right: none;
+    padding: 10px;
+}
+
+.grupo input{
+    border: 2px solid black;
+    border-radius: 8px;
+    border-bottom-left-radius:0;
+    border-top-left-radius:0;
+    border-left: none;
+    width: 20rem;
+    padding:10px;
+}
+
+.grupo ::placeholder {
+    font-size: 1.5em;
+}
+
+.grupo button{
+    width: 100px;
+    text-align: center;
+    padding: 10px 10px 10px 10px; 
+    margin-right: 30px;
+}
+
+.gris, .rojo{
+    visibility: hidden;
+    display: none;
 }
 
 @media (min-width: 820px){
@@ -538,6 +601,42 @@ footer .logo{
         background-color: #C1121F;
     }
 
+    /*Estilos envio de correo*/
+
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gris, .rojo{
+        padding-top: 4em;
+        visibility: visible;
+        display: block;
+        padding: 0;
+    }
+
+    .rojo{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .gris{
+        position: absolute;
+        bottom: 0;
+        left:  0;
+
+    }
+    
+    .grupo button{
+        width: 100px;
+        text-align: center;
+        padding: 10px 10px 10px 10px; 
+        margin-right: 30px;
+    }
 }
 
 @media (min-width:992px){
