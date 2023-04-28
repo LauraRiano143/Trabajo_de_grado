@@ -198,7 +198,7 @@ footer  .container{
     align-items: center;
     color:rgb(100,100,100);
     text-align: center;
-    margin:20px;
+
     padding:0px;
 }
 
@@ -410,7 +410,10 @@ footer .logo{
     display: none;
 }
 
-@media (min-width: 820px){
+/*Estilos nueva_contraseña*/
+
+
+@media (min-width: 830px){
 
     header .logo{
         padding-left: 20px;
@@ -507,15 +510,10 @@ footer .logo{
     }
 
     .contenedor{
-        margin-top: 5em;
-        width: 25rem;
-        height: 27rem;
-        border-radius: 25px;
-        padding: 4rem;
-    }
-
-    .contenedor1{
-        margin-top: 5em;
+        margin-top: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
         width: 25rem;
         height: 27rem;
         border-radius: 25px;
@@ -526,10 +524,19 @@ footer .logo{
         padding-top: 4em;
         visibility: visible;
         display: block;
+        
+    }
+
+    .imagen img{
+        position: absolute;
+        bottom: 0;
+        left:  0;
+
     }
 
     .titulo{
         border: 1px solid black;
+        margin-top: auto;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -603,12 +610,11 @@ footer .logo{
 
     /*Estilos envio de correo*/
 
-
     .images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .gris, .rojo{
@@ -628,7 +634,6 @@ footer .logo{
         position: absolute;
         bottom: 0;
         left:  0;
-
     }
     
     .grupo button{
